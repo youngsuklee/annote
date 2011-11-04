@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gsm_id: 1
+  tissue_type: MyString
+  disease_type: MyString
+  cell_type: MyString
+  disease_location: MyString
+  developmental_stage: 1
+  sex: 1
+  treatment: MyString
+  sample_preparation: MyString
+  genotype: MyString
+
+two:
+  gsm_id: 1
+  tissue_type: MyString
+  disease_type: MyString
+  cell_type: MyString
+  disease_location: MyString
+  developmental_stage: 1
+  sex: 1
+  treatment: MyString
+  sample_preparation: MyString
+  genotype: MyString

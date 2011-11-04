@@ -1,0 +1,57 @@
+<%= form_for(@annotation) do |f| %>
+  <% if @annotation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@annotation.errors.count, "error") %> prohibited this annotation from being saved:</h2>
+
+      <ul>
+      <% @annotation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gsm_id %><br />
+    <%= f.text_field :gsm_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tissue_type %><br />
+    <%= f.text_field :tissue_type %>
+  </div>
+  <div class="field">
+    <%= f.label :disease_type %><br />
+    <%= f.text_field :disease_type %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_type %><br />
+    <%= f.text_field :cell_type %>
+  </div>
+  <div class="field">
+    <%= f.label :disease_location %><br />
+    <%= f.text_field :disease_location %>
+  </div>
+  <div class="field">
+    <%= f.label :developmental_stage %><br />
+    <%= f.text_field :developmental_stage %>
+  </div>
+  <div class="field">
+    <%= f.label :sex %><br />
+    <%= f.text_field :sex %>
+  </div>
+  <div class="field">
+    <%= f.label :treatment %><br />
+    <%= f.text_field :treatment %>
+  </div>
+  <div class="field">
+    <%= f.label :sample_preparation %><br />
+    <%= f.text_field :sample_preparation %>
+  </div>
+  <div class="field">
+    <%= f.label :genotype %><br />
+    <%= f.text_field :genotype %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
