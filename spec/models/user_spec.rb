@@ -1,12 +1,8 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+require 'spec_helper'
 
-one:
-  name: MyString
-  email: MyString
-
-two:
-  name: MyString
-  email: MyString
+describe User do
+  pending "add some examples to (or delete) #{__FILE__}"
+end
 
 # == Schema Information
 #

@@ -10,22 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111104192110) do
-
-  create_table "annotations", :force => true do |t|
-    t.integer  "gsm_id"
-    t.string   "tissue_type"
-    t.string   "disease_type"
-    t.string   "cell_type"
-    t.string   "disease_location"
-    t.integer  "developmental_stage"
-    t.integer  "sex"
-    t.string   "treatment"
-    t.string   "sample_preparation"
-    t.string   "genotype"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20111105213811) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -33,5 +18,7 @@ ActiveRecord::Schema.define(:version => 20111104192110) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
 end
